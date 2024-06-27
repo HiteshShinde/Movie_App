@@ -1,0 +1,11 @@
+@import "../Variables.scss";
+
+#showcase {
+	background: $darkGrey;
+
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+}

@@ -1,0 +1,17 @@
+@import "./Variables.scss";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1250px;
+	margin: auto;
+	overflow: hidden;
+}
+
+a {
+	text-decoration: none;
+}

@@ -1,0 +1,16 @@
+@font-face {
+	font-family: "JioBold";
+	src: url("https://hcurvecdn.com/duolingo/vuxpw/300x600/JioBold.woff2");
+}
+
+body {
+	margin: 0;
+	font-family: "JioBold";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}

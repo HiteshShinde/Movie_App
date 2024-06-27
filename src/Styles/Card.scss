@@ -1,0 +1,79 @@
+@import "../Variables.scss";
+
+.card {
+	max-width: 300px;
+	margin: 1.2rem;
+	background-color: $lightGrey;
+	box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+	position: relative;
+	overflow: hidden;
+	border-radius: 5px;
+
+	.poster {
+		width: 100%;
+	}
+
+	.movieInfo {
+		color: $red;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0.5rem 1rem 1rem;
+		letter-spacing: 0.5px;
+
+		.rating {
+			background: $darkGrey;
+			padding: 0.25rem 0.5rem;
+			border-radius: 20px;
+		}
+	}
+
+	.overview {
+		background-color: #555;
+		color: #fff;
+		position: absolute;
+		padding: 2rem;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		max-height: 100%;
+		overflow: auto;
+		transform: translateY(101%);
+		transition: transform 0.25s ease-out;
+
+		&::-webkit-scrollbar {
+			width: 0px;
+		}
+
+		h2 {
+			padding: 10px 0px;
+			letter-spacing: 1px;
+		}
+
+		h4 {
+			color: #f4f4f4;
+			letter-spacing: 0.8px;
+			text-align: justify;
+		}
+	}
+
+	&:hover {
+		cursor: pointer;
+
+		.overview {
+			transform: translateY(0);
+		}
+	}
+}
+
+.red {
+	color: red;
+}
+
+.orange {
+	color: orange;
+}
+
+.green {
+	color: green;
+}
